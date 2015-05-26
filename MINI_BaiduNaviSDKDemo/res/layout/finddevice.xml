@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout  
+      android:layout_width="fill_parent"  
+      android:layout_height="wrap_content"  
+      android:layout_alignParentBottom = "true"  
+      android:id= "@+id/bt_bottombar">       
+                      
+        <Button android:id="@+id/start_seach"  
+            android:layout_width="match_parent"   
+            android:layout_height="wrap_content"    
+            android:layout_toRightOf="@+id/start_service"  
+            android:text="Began to search"/>           
+    </RelativeLayout>    
+  
+     <ListView    
+        android:id="@+id/devicelist"  
+        android:layout_width="fill_parent"    
+        android:layout_height="fill_parent"   
+        android:scrollingCache="false"   
+        android:divider="#ffc6c6c6"   
+        android:layout_weight="1.0"   
+        android:layout_above = "@id/bt_bottombar"  
+        
+        />
+
+</RelativeLayout>

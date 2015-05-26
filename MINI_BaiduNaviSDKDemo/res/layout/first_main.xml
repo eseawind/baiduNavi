@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <EditText 
+        android:id="@+id/et_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+     <EditText 
+        android:id="@+id/et_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+  
+       <TextView 
+       android:id="@+id/tv_show1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="1"/>  
+       <TextView 
+       android:id="@+id/tv_show2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="2"/>  
+       <TextView 
+       android:id="@+id/tv_show3"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="3"/>  
+       <TextView 
+       android:id="@+id/tv_show4"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="4"/>
+       
+       <Button 
+           android:id="@+id/but_show"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="按钮"/>
+
+</LinearLayout>

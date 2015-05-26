@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout  
+      android:layout_width="fill_parent"  
+      android:layout_height="wrap_content"  
+      android:id= "@+id/edit_bottombar"  
+      android:layout_alignParentBottom = "true"
+      >  
+  
+        <Button android:id="@+id/btn_disconnect"  
+            android:layout_width="65dp"   
+            android:layout_height="wrap_content"    
+            android:layout_alignParentLeft ="true"  
+            android:text="断开"/>   
+              
+        <Button android:id="@+id/btn_msg_send"  
+            android:layout_width="65dp"   
+            android:layout_height="wrap_content"    
+            android:layout_alignParentRight ="true"  
+            android:text="发送"/>    
+        <EditText  
+             android:layout_width="fill_parent"  
+             android:layout_height = "wrap_content"  
+             android:layout_toLeftOf="@id/btn_msg_send"  
+             android:layout_toRightOf="@+id/btn_disconnect"                
+             android:hint = "说点什么呢?"  
+             android:textSize="15dip"  
+             android:id = "@+id/MessageText"/>  
+		<Button android:id="@+id/btn_NaviInfo_send"  
+            android:layout_width="130dp"   
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_msg_send"            
+            android:text="自动导航"/>
+        <Button android:id="@+id/btn_stopNavi"  
+            android:layout_width="130dp"   
+            android:layout_height="wrap_content"  
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_disconnect"  
+            android:text="停止导航"/>
+
+		<ListView
+		    android:id="@+id/list"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@+id/btn_NaviInfo_send"
+		    android:divider="#ffc6c6c6"
+		    android:scrollingCache="false" />
+
+	</RelativeLayout>
+	
+     
+
+</RelativeLayout>
